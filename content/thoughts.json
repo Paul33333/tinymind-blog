@@ -1,5 +1,10 @@
 [
   {
+    "id": "1773799030328",
+    "content": "月之暗面（kimi）刚刚发布了一篇新论文[Attention Residuals](https://arxiv.org/abs/2603.15031)\n改进了transformer的架构：\n\n原始的attention是**序列维度的隐藏态加权平均**，用于加权当前时刻**前序所有**token（含当前token）的信息以生成当前时刻的隐藏态表征用于预测下一token；\n\n而kimi新推出的`attention residuals`是模型神经网络**深度层的加权平均**，用于加权混合当前时刻所有深度层的**当前**token的信息（各深度层的隐藏态表征混合，不再是深度等权）\n> 对比原始的transformer架构，残差连接层的权重默认都是1/n（或者说权重都是`1`），不是动态加权平均，现在将attention引入残差连接层后实现了深度层的加权平均",
+    "timestamp": "2026-03-18T01:57:10.329Z"
+  },
+  {
     "id": "1773495923047",
     "content": "# 2026年上半年agent swarm的发展方向的个人感想\n\n## 1. CLI即一切 (CLI is All You Need)\n- 所有工具都是CLI命令：统一接口，降低复杂度\n- 子智能体即子进程：通过命令行调用，隔离执行\n- 自然利用Unix生态：管道、重定向、后台执行\n\n## 2. 并行执行优先 (Parallel Execution First)\n- 合适的场景下，子智能体间完全并行：利用Unix并发机制\n- 任务级并行：独立任务同时执行\n- 资源共享通过文件系统：避免内存共享复杂性\n\n## 3. 规划驱动工作流 (Planning-Driven Workflow)\n- ReAct范式：思考-行动-观察循环\n- 自主规划：智能体自主分解任务\n- 动态调整：根据执行结果调整计划\n\n## 4. 工具即函数 (Tools as Functions)\n- 统一工具调用接口：所有工具都是`tool_name args`\n- 可组合性：工具可以通过管道组合\n- 扩展性：新工具作为独立CLI添加\n\n## 5. 工作空间对齐人类 (Workspace Aligned with Humans)\n- 共享文件系统：所有智能体可见\n- 结构化目录：研究、数据、输出分离\n- 透明中间结果：文件作为沟通媒介\n\n## 6. 智能体专业化 (Agent Specialization)\n- 领域专家子智能体：研究、分析、代码等\n- 职责分离：各司其职，避免单一智能体过载\n- 协作通过工作空间：文件传递结果\n\n## 7. 模块化与组合 (Modularity and Composition)\n- 智能体可组合：形成处理链\n- 任务可分解：复杂任务拆解为子任务\n- 结果可聚合：子结果合成最终答案\n\n\n",
     "timestamp": "2026-03-14T13:45:23.047Z"
