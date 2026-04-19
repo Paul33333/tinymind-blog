@@ -1,7 +1,10 @@
 ---
-title: [Managed Agents](https://www.anthropic.com/engineering/managed-agents) 博客解读
+title: Managed Agents 博客解读
 date: 2026-04-19T08:56:46.421Z
 ---
+
+博客链接：https://www.anthropic.com/engineering/managed-agents
+
 
 1、为什么要把脑和手解耦？
 
