@@ -1,5 +1,10 @@
 [
   {
+    "id": "1777246264785",
+    "content": "Unix哲学用于Agent：文件即记忆， 管道即流程，子进程即上下文隔离",
+    "timestamp": "2026-04-26T23:31:04.785Z"
+  },
+  {
     "id": "1773799030328",
     "content": "月之暗面（kimi）刚刚发布了一篇新论文[Attention Residuals](https://arxiv.org/abs/2603.15031)\n改进了transformer的架构：\n\n原始的attention是**序列维度的隐藏态加权平均**，用于加权当前时刻**前序所有**token（含当前token）的信息以生成当前时刻的隐藏态表征用于预测下一token；\n\n而kimi新推出的`attention residuals`是模型神经网络**深度层的加权平均**，用于加权混合当前时刻所有深度层的**当前**token的信息（各深度层的隐藏态表征混合，不再是深度等权）\n> 对比原始的transformer架构，残差连接层的权重默认都是1/n（或者说权重都是`1`），不是动态加权平均，现在将attention引入残差连接层后实现了深度层的加权平均",
     "timestamp": "2026-03-18T01:57:10.329Z"
