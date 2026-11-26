@@ -3,9 +3,10 @@ title: "javis-一个常驻个人智能体的设计"
 date: 2026-11-26T13:05:12.082Z
 ---
 
+
 ![Javis：一个常驻个人智能体的设计](https://raw.githubusercontent.com/Paul33333/tinymind-blog/main/assets/images/2026-11-26/00-cover.png)
 
-> 本文是一篇面向工程实践的设计介绍。Javis目前为0.1版，准备以Apache-2.0开源（地址后补）。
+> 本文是一篇面向工程实践的设计介绍。Javis目前为0.1版，开源地址：https://github.com/Paul33333/JAVIS-Agent
 
 ## 1. 从对话到常驻
 
